@@ -1,0 +1,36 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/register.css" />
+    <title>@ViewData["Title"] - web</title>
+    >
+
+</head>
+<body>
+
+    <div class="login-box">
+        <h1>Login</h1>
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="" />
+
+            <label>Password</label>
+            <input type="password" placeholder="" />
+
+            <input type="button" value="Submit" />
+        
+
+            <p class="para-2">
+                Don't'have an account? <a class="nav" asp-area="" asp-page="/register">Register </a> <br />If you a admin press here <a class="nav" asp-area="" asp-page="/admin">Admin </a>
+            </p>
+            </form>
+    </div>
+    </body>
+</html>

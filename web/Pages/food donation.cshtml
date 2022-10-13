@@ -1,0 +1,126 @@
+﻿@page
+@model web.Pages.food_donationModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/home.css" />
+    <title>@ViewData["Title"] - web</title>
+
+    <style type="text/css">
+
+        .regform {
+            width: 800px;
+            background-color: rgba(0,0,0,0.6);
+            margin: auto;
+            color: mediumpurple;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgba(0,0,0,0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        .form {
+            padding: 10px;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a class="nav" asp-area="" asp-page="/index">Home </a></li>
+            <li><a class="nav" asp-area="" asp-page="/food donation">food donations </a></li>
+            <li><a class="nav" asp-area="" asp-page="/money donation">Money donations </a></li>
+            <li><a class="nav" asp-area="" asp-page="/About us">About ua </a></li>
+
+
+        </ul>
+
+
+    </div>
+
+    <div class="regform"><center><h1 style="color:orange"> Donation form</h1></center></div>
+    <div class="main">
+
+
+
+        <form name="myForm " action="/action_page.php" onsubmit="return" method="post">
+            <div id="name">
+                <h2 class="name"> Name  </h2>
+
+                <center><input class="FirstName" type="text" name="first_name" maxlength="15" /></center>
+                <center><label class="firstlabel">First name</label><br /></center>
+
+
+                <center><input class="NumOfItems" type="number" name="items" required></center>
+                <center><label class="Lastlabel">Number of items</label></center>
+
+
+
+                <center><h2 class="name">Clothes and Non-perishable</h2></center>
+
+                <center>
+                    <select class="option" name="Country" required>
+                        <option value="" disabled="disabled" selected="selected">Choose a category</option>
+                        <option value="Morocc">Clothes</option>
+                        <option value="Egypt">Non-perishable</option>
+
+
+                    </select>
+
+
+                </center>
+
+                <center><label for="subject">Description of item</label></center>
+                <center><textarea id="subject" name="subject" placeholder="Write your description here" style="height:200px"></textarea></center>
+
+
+                <center><input class="Disaster" type="text" name="first_name" maxlength="15" /></center>
+                <center><label class="firstlabel">Enter new disaster</label><br /></center>
+
+                <center><input class="Disaster" type="date" name="date" required></center>
+                <center><label class="Last">Start date of disaster</label></center>
+
+                <center><input class="Disaster" type="date" name="date" required></center>
+                <center><label class="Last">End date of disaster</label></center>
+
+                <center><input class="Location" type="text" name="first_name" /></center>
+                <center><label class="firstlabel">Location of the disaster</label><br /></center>
+
+                <center><label for="subject">Description of item</label></center>
+                <center><textarea id="subject" name="subject" placeholder="Write the disaster description" style="height:200px"></textarea></center>
+
+
+                <center>
+                    <select class="option" name="Country" required>
+                        <option value="" disabled="disabled" selected="selected">Choose the required aid</option>
+                        <option value="Morocc">Water provision</option>
+                        <option value="Egypt">Clothing</option>
+                        <option value="Morocc">Food</option>
+                        <option value="Egypt">Others</option>
+
+
+                    </select>
+
+
+                </center>
+
+                <center><input type="button" value="Submit"></center>
+
+
+            </div>
+        </form>
+        </div>
+</body>
+</html>

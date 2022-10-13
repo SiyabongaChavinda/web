@@ -1,0 +1,44 @@
+﻿@page
+@model web.Pages.registerModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/register.css" />
+    <title>@ViewData["Title"] - web</title>
+    >
+
+</head>
+<body>
+
+    <div class="signUp-box">
+
+        <h1>Sign Up</h1>
+        <h4>It's free and only takes a minute</h4>
+        <form method="post">
+
+            <label>First Name</label>
+            <input type="text" placeholder="">
+            
+
+            <label >Last Name</label>
+            <input type="text" placeholder="">
+
+            <label>Email</label>
+            <input type="email" placeholder="">
+
+            <label>Password</label>
+            <input type="password" placeholder="">
+
+            <input type="button" value="Submit">
+
+
+        </form>
+        <p>By clicking the Sign Up button, you agree to our terms and conditions</p>
+        <p>Already have an account? <center><a class="nav" asp-area="" asp-page="/login">Login </a></center> If you a Admin press here <center><a class="nav" asp-area="" asp-page="/admin">Admin </a></center> </p>
+    </div>
+
+</body>

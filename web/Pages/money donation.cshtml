@@ -1,0 +1,90 @@
+﻿@page
+@model web.Pages.money_donationModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/money.css" />
+
+    <title>@ViewData["Title"] - web</title>
+    <style type="text/css">
+
+        .regform {
+            width: 800px;
+            background-color: rgba(0,0,0,0.6);
+            margin: auto;
+            color: #FFFFFF;
+            padding: 10px 0px 10px 0px;
+            text-align: center;
+            border-radius: 15px 15px 0px 0px;
+        }
+
+        .main {
+            background-color: rgba(0,0,0,0.5);
+            width: 800px;
+            margin: auto;
+        }
+
+        .form {
+            padding: 10px;
+        }
+
+   
+                   
+    </style>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a class="nav" asp-area="" asp-page="/index">Home </a></li>
+            <li><a class="nav" asp-area="" asp-page="/food donation">food donations </a></li>
+            <li><a class="nav" asp-area="" asp-page="/money donation">Money donations </a></li>
+            <li><a class="nav" asp-area="" asp-page="/About us">About us </a></li>
+            <li><a class="nav" asp-area="" asp-page="/register">Sign Up </a></li>
+
+
+        </ul>
+    </div>
+
+    <div class="regform"><h1 style="color:purple"> Donation form</h1></div>
+    <div class="main">
+
+
+
+        <form name="myForm " action="/action_page.php" onsubmit="return" method="post">
+            <div id="name">
+                <h2 class="name"> Name  </h2>
+
+                <center><input class="FirstName" type="text" name="first_name" maxlength="15" /></center>
+                <center><label class="firstlabel">First name</label><br /></center>
+
+
+                <center><input class="Amount" type="number" name="amount" required></center>
+                <center><label class="Lastlabel">Amount</label></center>
+
+                <center><input class="Date" type="date" name="date" required></center>
+                <center><label class="Last">Date</label></center>
+
+                <center><h2 class="name">Disaster</h2></center>
+                <center>
+                    <select class="option" name="Country" required>
+                        <option value="" disabled="disabled" selected="selected">Choose a disaster</option>
+                        <option value="Morocc">Kzn floods</option>
+                        <option value="Egypt">Gauteng Hurricane</option>
+                        <option value="South Africa">Cape town land slide</option>
+                        <option value="Zimbabwe">Duduza Earthquake</option>
+
+                    </select>
+                </center>
+
+                <input type="button" value="Submit">
+            </div>
+            </form>
+        </div>
+</body>
+</html>

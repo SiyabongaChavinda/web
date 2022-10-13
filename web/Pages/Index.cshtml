@@ -1,0 +1,51 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/home.css" />
+    <title>@ViewData["Title"] - web</title>
+    
+
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <li><a class="nav" asp-area="" asp-page="/index">Home </a></li>
+            <li><a class="nav" asp-area="" asp-page="/food donation">food donations </a></li>
+            <li><a class="nav" asp-area="" asp-page="/money donation">Money donations </a></li>
+            <li><a class="nav" asp-area="" asp-page="/About us">About us </a></li>
+            <li><a class="nav" asp-area="" asp-page="/register">Register </a></li>
+
+        </ul>
+
+
+    </div>
+
+    <Center><h1> welcome to Donate for a Disaster</h1></Center>
+
+    <h3>What is the purpose of the Organisation</h3>
+        <p>
+            for this company well we a company that strives through donations to help aid the after effects
+            of a natural disaster like the most recent Disaster we funded was the KZN flood disaster which was terrific because it
+            killed alot of people and ruined almost everything in its path from houses to cars and even furniture
+        </p>
+         
+    <img src="images/help.png" alt="" class="logo"  />
+
+    <h3>What are our future plans</h3>
+    <p>Our future plans are to expand our help to aid other african countries with natural disaster that they are facing because
+    why not if we have the funds and the support we need ,but we shall branch out to other countires little by little hopefully
+    we will get reconginition from other big comoanies who are willing to help people who have lost almost everything because of
+    a natural disaster</p>
+    
+    
+</body>
+    </html>
